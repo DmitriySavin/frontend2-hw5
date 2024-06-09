@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.title {
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.list {
+  background-color: grey;
+  display: flex;
+  width: 400px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.list-item {
+  position: relative;
+  width: 400px;
+}
+.item-list {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  padding-top: 20px;
+
+  
+}
+.list-item:hover .item-list {
+  display: block;
+}
+.list-link:hover,
+.list-link:focus {
+    color: orange;
+}
