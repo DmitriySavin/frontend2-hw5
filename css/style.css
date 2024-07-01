@@ -7,9 +7,16 @@ html {
   box-sizing: inherit;
 }
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 100px;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    background: grey;
+}
+.container:hover .list {
+  transform: translate(-100px);
 }
 ul {
   list-style: none;
@@ -23,8 +30,10 @@ a {
 
 .title {
   text-transform: uppercase;
-  display: block;
-  margin: 0 auto;
+    background-color: grey;
+    transform: rotate(90deg);
+    margin-top: 50px;
+
 }
 li {
   text-align: center;
@@ -32,12 +41,19 @@ li {
 }
 .list {
   background-color: grey;
-  display: flex;
   width: 400px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
+      height: 950px;
+  position: absolute;
+  left: 100px;
+  /* top: 20px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-600px);
 }
+
 .list-item {
   position: relative;
   width: 400px;
